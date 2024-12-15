@@ -1,0 +1,40 @@
+.modalFullArea {
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 111;
+}
+.modalContentArea {
+  position: absolute;
+  padding: 10px;
+  left: 0%;
+  background-color: var(--primary_color);
+  width: 80%;
+  height: 100vh;
+}
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--menu_color);
+}
+.modalHeader .logo img {
+  width: 200px;
+}
+.modalHeader .CrossIcon {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+@media (max-width: 400px) {
+  .modalHeader .logo img {
+    width: 100px;
+  }
+  .modalHeader .CrossIcon {
+    font-size: 20px;
+  }
+}

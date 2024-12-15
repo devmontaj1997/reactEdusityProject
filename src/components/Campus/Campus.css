@@ -1,0 +1,46 @@
+.galleryImgSection {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.galleryImgSection > * {
+  flex: 1 1 calc(50% - 5px); /* Adjust the width to fit two items per row with the gap */
+}
+.galleryImgSection img {
+  width: 100%;
+  border-radius: 15px;
+}
+.buttoArea {
+  text-align: center;
+  margin: 40px;
+}
+.buttoArea Button {
+  background-color: var(--primary_color);
+}
+.buttoArea Button .buttonContent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--menu_color);
+}
+.buttoArea Button .buttonContent p {
+  font-size: 16px;
+  color: var(--menu_color);
+  font-family: var(--font_family);
+}
+.buttoArea Button .buttonContent img {
+  width: 20px;
+}
+
+
+/* media query */
+@media (min-width: 769px) {
+  .galleryImgSection {
+    gap: 10px;
+    flex-wrap: nowrap; /* Prevent wrapping for larger screens */
+  }
+  .galleryImgSection > * {
+    flex: 1; /* Items take up equal space */
+  }
+}

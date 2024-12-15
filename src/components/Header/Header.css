@@ -1,0 +1,104 @@
+.fullHeader {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  padding: 5px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+
+
+.fullHeader.scrolled {
+  background-color: #212ea0; /* Set your desired background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow when scrolled */
+}
+
+.headerArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left .logo img {
+  width: 180px;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.right .Menu ul {
+  display: flex;
+  gap: 25px;
+}
+.right .Menu ul li {
+  color: var(--menu_color);
+  font-family: var(--font_family);
+  cursor: pointer;
+}
+.mobileMenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mobileMenu ul li {
+  color: var(--heading_color);
+  font-family: var(--font_family);
+  background-color: var(--menu_color);
+  padding: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.mobileMenuIcon {
+  display: none;
+}
+.headerArea .right .buttonArea Button {
+  background-color: var(--menu_color);
+}
+.headerArea .right .buttonArea .contactBtn {
+  color: black;
+  font-family: var(--font_family);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+
+/* media query */
+
+@media (max-width: 1024px) {
+  .mobileMenuIcon {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    line-height: 0;
+    cursor: pointer;
+  }
+
+  .destopMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .left .logo img {
+    width: 130px;
+  }
+  .mobileMenuIcon {
+    font-size: 25px;
+  }
+
+  .mobileMenu ul li {
+    font-size: 15px;
+  }
+  .headerArea .right .buttonArea .contactBtn {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,50 @@
+.videoPopapFullArea {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.263);
+  position: fixed;
+  z-index: 1000;
+}
+
+.videoPopapArea {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 5%;
+  height: 100vh;
+}
+
+.videoPopapArea iframe {
+  width: 80%;
+  height: 80%;
+}
+
+.videoPopapArea .CrossIcon {
+  color: white;
+  font-size: 35px;
+  align-self: flex-start;
+  cursor: pointer;
+}
+/* media query */
+@media (max-width: 400px) {
+    .videoPopapArea iframe {
+        width: 98%;
+        height: 98%;
+      }
+      .videoPopapArea .CrossIcon {
+        color: white;
+        font-size: 25px;
+        position: absolute;
+        right: 26px;
+        top: 25px;
+      }
+   
+   
+  }

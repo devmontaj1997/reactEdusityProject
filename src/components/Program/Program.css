@@ -1,0 +1,22 @@
+.programCardArea {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  
+}
+
+
+/* media query */
+
+@media (max-width: 576px) {
+  .programCardArea {
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  
+
+ 
+}

@@ -1,0 +1,104 @@
+.contactArea {
+  display: flex;
+  justify-content: space-between;
+}
+.contactArea .contactLeft {
+  flex-basis: 48%;
+}
+.contactArea .contactLeft .headingArea {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+.contactArea .contactLeft .headingArea h2 {
+  color: var(--heading_color);
+  font-family: var(--font_family);
+  font-size: 25px;
+  font-weight: 500;
+}
+.contactArea .contactLeft .headingArea img {
+  width: 35px;
+}
+
+.contactArea .contactLeft .textArea p {
+  max-width: 450px;
+  color: var(--text_color);
+  font-family: var(--font_family);
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.contactArea .contactLeft .listArea ul li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.contactArea .contactLeft .listArea ul li img {
+  width: 25px;
+}
+.contactArea .contactLeft .listArea ul li p {
+  font-size: 15px;
+  color: var(--text_color);
+  font-family: var(--font_family);
+  margin-left: 15px;
+}
+
+.contactArea .contactRight {
+  flex-basis: 48%;
+}
+
+.contactArea .contactRight .formArea form label {
+  color: var(--text_color);
+  font-family: var(--font_family);
+  font-size: 18px;
+}
+.contactArea .contactRight .formArea form input,
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #ebecfe;
+  outline: none;
+  color: var(--text_color);
+  font-family: var(--font_family);
+  font-size: 14px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.contactArea .contactRight .formArea textarea {
+  height: 150px;
+}
+
+.contactArea .contactRight .submiteButton {
+  margin-top: 15px;
+}
+.contactArea .contactRight .submiteButton Button {
+  background-color: var(--primary_color);
+}
+.contactArea .contactRight .submiteButton Button .buttonContent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--menu_color);
+}
+.contactArea .contactRight .submiteButton Button .buttonContent p {
+  font-size: 16px;
+  color: var(--menu_color);
+  font-family: var(--font_family);
+}
+.contactArea .contactRight .submiteButton Button .buttonContent img {
+  width: 20px;
+}
+
+
+/* media query */
+@media (max-width: 768px) {
+  .contactArea {
+    flex-direction: column;
+  }
+  .contactArea .contactRight {
+margin-top: 20px;  }
+  
+
+}

@@ -1,0 +1,30 @@
+.sectionTitleArea {
+  text-align: center;
+  margin: 70px 0;
+}
+.sectionTitleArea .subHeading h4, .sectionTitleHeading {
+  text-transform: uppercase;
+  color: var(--primary_color);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font_family);
+  margin-bottom: 10px;
+}
+.sectionTitleArea .sectionTitleHeading h2 {
+    text-transform: none;
+    font-size: 32px;
+    color: #000f38;
+  }
+  
+
+  /* media query */
+
+  @media (max-width: 768px) {
+    .sectionTitleArea {
+      margin: 20px 0;
+    }
+
+   
+  }
+
+  

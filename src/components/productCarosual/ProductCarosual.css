@@ -1,0 +1,85 @@
+.productCarosul {
+  background-color: yellow;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productCarosul .productSlider {
+  background-color: aqua;
+  width: 100%;
+  position: relative;
+}
+.productCarosul .productSlider .prevBtn {
+  position: absolute;
+  background-color: blue;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 50%;
+  left: 0;
+  right: auto;
+  top: 50%;
+  cursor: pointer;
+}
+.productCarosul .productSlider .nextBtn {
+  position: absolute;
+  background-color: blue;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 50%;
+  right: 0;
+  cursor: pointer;
+  top: 50%;
+}
+.productCarosul .productSlider .productSlide {
+  background-color: rgb(55, 255, 0);
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+}
+.productCarosul .productSlider .productSlide ul {
+  display: flex;
+  gap: 8px;
+  overflow-x: hidden;
+}
+.productCarosul .productSlider .productSlide li {
+  width: 50%;
+  scroll-behavior: smooth;
+}
+.productCarosul .productSlider .productSlide .producrSlideCard {
+  background-color: antiquewhite;
+  
+  padding: 30px;
+  scroll-behavior: smooth;
+  border-radius: 10px;
+}
+.producrSlideCard .cardTop {
+  display: flex;
+  gap: 10px;
+}
+.producrSlideCard .cardTop .userImg img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+.producrSlideCard .cardTop .userContent h1 {
+  font-family: var(--font_family);
+  font-size: 20px;
+  font-weight: 500;
+  color: red;
+}
+.producrSlideCard .cardTop .userContent p {
+  font-family: var(--font_family);
+  font-size: 14px;
+  color: rgb(53, 50, 50);
+}
+.producrSlideCard .cardBttom p {
+  font-family: var(--font_family);
+  font-size: 14px;
+  color: rgb(53, 50, 50);
+}
