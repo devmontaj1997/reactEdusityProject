@@ -59,11 +59,11 @@ const Contact = () => {
               <ul>
                 <li>
                   <img src={mailicon} alt="" />
-                  <p> Contact@GreatStack.dev</p>
+                  <p> Contactdevmontaj.dev</p>
                 </li>
                 <li>
                   <img src={phoneicon} alt="" />
-                  <p> +1 123-456-7890</p>
+                  <p> 8481803761</p>
                 </li>
                 <li>
                   <img src={locationicon} alt="" />
